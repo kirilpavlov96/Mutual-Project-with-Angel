@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//ami ako napisha neshto da srina koda :D
 public class ms {
 	static boolean vic;
 	static char arr[][] = { { ' ', ' ', ' ' },
