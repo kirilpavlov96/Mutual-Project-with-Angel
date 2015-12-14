@@ -11,29 +11,61 @@ public class knight {
 	}
 
 	static void printMoves(char arr[][], int row, int col) {
-		if (row + 2 < 8 && col + 1 < 8 && arr[row + 2][col + 1] != '*') {
-			arr[row + 2][col + 1] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row + 2 < 8 && col + 1 < 8 && arr[row + 2][col + 1] != '*') {
+					arr[row + 2][col + 1] = '*';
+				}
+			}
 		}
-		if (row + 2 < 8 && col - 1 >= 0 && arr[row + 2][col - 1] != '*') {
-			arr[row + 2][col - 1] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row + 2 < 8 && col - 1 >= 0 && arr[row + 2][col - 1] != '*') {
+					arr[row + 2][col - 1] = '*';
+				}
+			}
 		}
-		if (row + 1 < 8 && col + 2 < 8 && arr[row + 1][col + 2] != '*') {
-			arr[row + 1][col + 2] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row + 1 < 8 && col + 2 < 8 && arr[row + 1][col + 2] != '*') {
+					arr[row + 1][col + 2] = '*';
+				}
+			}
 		}
-		if (row + 1 < 8 && col - 2 >= 0 && arr[row + 1][col - 2] != '*') {
-			arr[row + 1][col - 2] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row + 1 < 8 && col - 2 >= 0 && arr[row + 1][col - 2] != '*') {
+					arr[row + 1][col - 2] = '*';
+				}
+			}
 		}
-		if (row - 1 >= 0 && col - 2 >= 0 && arr[row - 1][col - 2] != '*') {
-			arr[row - 1][col - 2] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row - 1 >= 0 && col - 2 >= 0 && arr[row - 1][col - 2] != '*') {
+					arr[row - 1][col - 2] = '*';
+				}
+			}
 		}
-		if (row - 1 >= 0 && col + 2 < 8 && arr[row - 1][col + 2] != '*') {
-			arr[row - 1][col + 2] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row - 1 >= 0 && col + 2 < 8 && arr[row - 1][col + 2] != '*') {
+					arr[row - 1][col + 2] = '*';
+				}
+			}
 		}
-		if (row - 2 >= 0 && col + 1 < 8 && arr[row - 2][col + 1] != '*') {
-			arr[row - 2][col + 1] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row - 2 >= 0 && col + 1 < 8 && arr[row - 2][col + 1] != '*') {
+					arr[row - 2][col + 1] = '*';
+				}
+			}
 		}
-		if (row - 2 >= 0 && col - 1 >= 0 && arr[row - 2][col - 1] != '*') {
-			arr[row - 2][col - 1] = '*';
+		for (int i=0;i<arr.length;i++){
+			for (int j = 0; j<arr[0].length; j++) {
+				if (row - 2 >= 0 && col - 1 >= 0 && arr[row - 2][col - 1] != '*') {
+					arr[row - 2][col - 1] = '*';
+				}
+			}
 		}
 	}
 
@@ -49,7 +81,7 @@ public class knight {
 		printBoard(arr);
 		printMoves(arr, row, col);
 		System.out.println();
-		printBoard(arr);
+		
 
 	}
 
