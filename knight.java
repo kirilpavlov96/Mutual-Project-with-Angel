@@ -71,7 +71,11 @@ public class knight {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		char[][] arr = new char[8][8];
+		System.out.println("Enter m");
+		int m = sc.nextInt();
+		System.out.println("Enter n");
+		int n = sc.nextInt();
+		char[][] arr = new char[m][n];
 		System.out.println("Enter coordinates for row:");
 		int row = sc.nextInt();
 		System.out.println("Enter coordinates for column:");
