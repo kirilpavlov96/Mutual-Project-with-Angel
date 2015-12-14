@@ -116,42 +116,6 @@ public class EncryptDecrypt {
 	}
 	
 	public void decrypt(){
-		if(this.word.length()%2!=0) this.word+='a';
-		this.word=this.word.toUpperCase();
-		for(int i=0;i<this.word.length();i+=2){
-			int firstLetterRow=positions[(int)(this.word.charAt(i)-'A')]/10%10;
-			int firstLetterCow=positions[(int)(this.word.charAt(i)-'A')]%10;
-			int secondLetterRow=positions[(int)(this.word.charAt(i+1)-'A')]/10%10;
-			int secondLetterCow=positions[(int)(this.word.charAt(i+1)-'A')]%10;
-			
-			
-			String firstLetterMoveDirection="none";
-			String secondLetterMoveDirection="none";
-			int step=0;
-			
-			if(firstLetterCow==secondLetterCow && firstLetterRow==secondLetterRow);
-			else if(firstLetterCow==secondLetterCow){
-				firstLetterMoveDirection="down";
-				secondLetterMoveDirection="down";
-				step=1;
-			}
-			else if(firstLetterRow==secondLetterRow){
-				firstLetterMoveDirection="right";
-				secondLetterMoveDirection="right";
-				step=1;
-			}
-			else if(firstLetterCow<secondLetterCow){
-				firstLetterMoveDirection="right";
-				secondLetterMoveDirection="left";
-				step=Math.abs(firstLetterCow-secondLetterCow);
-			}
-			else if(firstLetterCow>secondLetterCow){
-				firstLetterMoveDirection="left";
-				secondLetterMoveDirection="right";
-				step=Math.abs(firstLetterCow-secondLetterCow);
-			}
-			
-			this.word=changeLetters(this.word,i,firstLetterMoveDirection,secondLetterMoveDirection,step, firstLetterRow, firstLetterCow, secondLetterRow, secondLetterCow);
-		}
+		this.encrypt();
 	}
 }
