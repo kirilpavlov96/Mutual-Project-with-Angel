@@ -82,9 +82,10 @@ public class knight {
 		int col = sc.nextInt();
 		arr[row][col] = '*';
 		
-		printBoard(arr);
+		
 		printMoves(arr, row, col);
-		System.out.println();
+		printBoard(arr);
+		
 		
 
 	}
